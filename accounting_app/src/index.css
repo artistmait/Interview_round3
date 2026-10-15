@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* FinEase AI - Clean Professional Blue Design System
+   Theme:
+   - Primary Deep Navy: #0D1C42
+   - Primary Slate Blue: #1E40AF
+   - Sky & Blue Accents: #2563EB / #3B82F6 / #EFF6FF
+   - Warm Neutral Surface: #F8FAFC
+   - Clean Sans-Serif Typography
+*/
+:root {
+  /* Brand Palette - Blue Theme */
+  --navy-deep: #0D1C42;
+  --navy-blue: #1E40AF;
+  --blue-primary: #2563EB;
+  --blue-light: #EFF6FF;
+  --white: #FFFFFF;
+
+  /* Surfaces & Backgrounds */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-cream: #FCF1D0;
+
+  /* Clean Borders */
+  --border-color: #E2E8F0;
+  --border-dark: #CBD5E1;
+  --border-navy: #22396F;
+
+  /* Typography Colors */
+  --text-primary: #0D1C42;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+  --text-light: #FFFFFF;
+
+  /* Modern Clean Sans-Serif Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Subtle Clean Shadows */
+  --shadow-subtle: 0 1px 3px rgba(13, 28, 66, 0.08);
+  --shadow-card: 0 2px 8px rgba(13, 28, 66, 0.06);
+  --shadow-elevated: 0 8px 20px rgba(13, 28, 66, 0.1);
+
+  /* Clean Radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--white);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--navy-deep);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+p {
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 14px;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+/* Minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
